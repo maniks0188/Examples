@@ -23,6 +23,11 @@ import org.springframework.web.bind.annotation.RestController;
 import com.practice.mongodb.model.Task;
 import com.practice.mongodb.service.TaskService;
 
+/**
+ * This Rest Controller class provides endpoints for the users to manage the MongoDb application
+ * @author Manik Sharma
+ *
+ */
 @RestController
 @RequestMapping(path = "/api/v1")
 public class TaskController {

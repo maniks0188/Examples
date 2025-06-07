@@ -10,6 +10,12 @@ import org.springframework.stereotype.Component;
 
 import com.practice.mongodb.model.Task;
 
+
+/**
+ * This class generates dummy data for the application based upon the input provided by the user.
+ * @author user
+ *
+ */
 @Component
 public class DataGenerator {
 
@@ -21,6 +27,11 @@ public class DataGenerator {
 	private static String SUB_TASK_DESC_TXT = " This text is used for description of sub task for ";
 	
 	
+	/**
+	 * This method generates task objects to be stored in MongoDB
+	 * @param count
+	 * @return List of {@link Task} objects
+	 */
 	public static List<Task> buildData(int count) {
 		
 		List<Task> tasks = new ArrayList<>();
